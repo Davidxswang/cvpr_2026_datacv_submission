@@ -1,0 +1,6 @@
+[submodule "external/VI-Probe-Competition"]
+	path = external/VI-Probe-Competition
+	url = https://github.com/marvinli00/cvpr2026-VI-Probe-Competition
+[submodule "external/DataCV-2026-Challenge-CVPR-Task-II-Competition"]
+	path = external/DataCV-2026-Challenge-CVPR-Task-II-Competition
+	url = https://github.com/Houwenjin/DataCV-2026-Challenge-CVPR-Task-II-Competition

@@ -1,0 +1,42 @@
+[project]
+name = "cvpr-2026-datacv"
+version = "0.1.0"
+description = "CVPR 2026 DataCV Challenge - VLM visual illusion understanding"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic-ai>=1.66.0",
+    "pydantic>=2.12.5",
+    "typer>=0.24.1",
+    "pandas>=3.0.1",
+    "tqdm>=4.67.3",
+    "numpy>=2.4.2",
+    "pillow>=12.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.5",
+    "mypy>=1.19.1",
+    "pandas-stubs>=3.0.0.260204",
+    "types-tqdm>=4.67.3.20260303",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+extend-exclude = ["external"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+files = ["main.py", "src"]
+exclude = ["external"]
+explicit_package_bases = true
