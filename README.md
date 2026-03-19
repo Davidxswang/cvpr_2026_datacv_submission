@@ -142,12 +142,13 @@ uv run python main.py task2 \
 
 ## Optional Failed-Sample Repair
 
-If a run is interrupted by provider-side failures (like error_code=429 all the time) and you want to repair only failed samples in the same experiment directory, rerun with `--allow-mixed-model-repair`.
+If a run is interrupted by provider-side failures (e.g. frequent error_code=429) and you want to repair only failed samples in the same experiment directory with a different model, rerun with `--allow-mixed-model-repair` alongside the new model name.
+
 One recovery configuration used during archived runs was:
 
 In our archived submitted test outputs, Flash-Lite repair affected 340/630 Task 1 samples and 1/755 Task 2 samples.
-If a reproduction requires significantly more repaired samples than this, worse results should be expected.
-If a reproduction requires significantly fewer repaired samples than this, improved results should be expected.
+If a reproduction requires significantly more repaired samples than this, worse results should be expected (given repairs with a weaker model).
+If a reproduction requires significantly fewer repaired samples than this, improved results should be expected (given repairs with a weaker model).
 
 Task 1 repair:
 
