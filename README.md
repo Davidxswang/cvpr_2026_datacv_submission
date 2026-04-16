@@ -38,7 +38,7 @@ This project uses `uv` and requires Python 3.13.
 ```bash
 uv python install 3.13
 uv sync
-export GEMINI_API_KEY=YOUR_KEY
+export GOOGLE_API_KEY=YOUR_KEY
 ```
 
 ## Repository Layout
