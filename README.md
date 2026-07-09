@@ -210,3 +210,16 @@ The `submit` command additionally creates `result.zip`.
 - Gemini API outputs may vary slightly across reruns even with the same settings.
 - Validation reproduction works immediately after cloning the repo with submodules.
 - Test reproduction additionally requires the official test files placed under `data/` as shown above.
+
+## Citation
+
+```
+@InProceedings{Wang_2026_CVPR,
+    author    = {Wang, Xuesong and Wang, Harry},
+    title     = {Seeing the Evidence, Missing the Answer: Tool-Guided Vision-Language Models on Visual Illusions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2026},
+    pages     = {3022-3026}
+}
+```
